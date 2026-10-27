@@ -11,16 +11,56 @@
             height: 600px;
             border-radius: 20px;
             background-color: orange;
+            display: flex;
+            align-items:center;
+            
+            flex-direction: column;
+            
             
         }
 
         .screen{
-            width: 400px;
+            width: 550px;
             height: 100px;
+            margin-top: 10px;
             
-            background-color:gray;
-            border-radius: 10px;
+            background-color:rgb(208, 200, 200);
+            border-radius: 20px;
         }
+
+        .action{
+            display: flex;
+            flex-direction: row;
+            margin-top: 20px;
+            align-items: start;
+        }
+        .numbers{
+            display: flex;
+            flex-direction:row;
+            flex-wrap: wrap;
+            width:300px;
+            
+        }
+        .number{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            
+        }
+
+        .operator{
+            display: flex;
+            flex-direction:row;
+            flex-wrap: nowrap;
+            width:200px;
+
+        }
+        .operator{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+
     </style>
 </head>
 <body>
@@ -30,24 +70,26 @@
         </div>
         <div class="action">
             <div class="numbers">
-                <button class="number"></button>
-                <button class="number"></button>
-                <button class="number"></button>
-                <button class="number"></button>
-                <button class="number"></button>
-                <button class="number"></button>
-                <button class="number"></button>
-                <button class="number"></button>
-                <button class="number"></button>
+                <button class="number">1</button>
+                <button class="number">2</button>
+                <button class="number">3</button>
+                <button class="number">4</button>
+                <button class="number">5</button>
+                <button class="number">6</button>
+                <button class="number">7</button>
+                <button class="number">8</button>
+                <button class="number">9</button>
+                <button class="number">0</button>
 
             </div>
             <div class="operations">
-                <button></button>
-                <button></button>
-                <button></button>
-                <button></button>
-                <button></button>
-                <button></button>
+                <button class="operator" id="clear">Clear</button>
+                <button class="operator" id="equal">=</button>
+                <button class="operator" id="add">+</button>
+                <button class="operator" id="sub">-</button>
+                <button class="operator" id="div">/</button>
+                <button class="operator" id="mul">*</button>
+                
             </div>
         </div>
     </div>
