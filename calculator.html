@@ -21,8 +21,8 @@
 
         .screen{
             width: 550px;
-            height: 100px;
-            margin-top: 10px;
+            height: 120px;
+            margin-top: 20px;
             
             background-color:rgb(208, 200, 200);
             border-radius: 20px;
@@ -31,36 +31,55 @@
         .action{
             display: flex;
             flex-direction: row;
-            margin-top: 20px;
+            margin-top: 40px;
             align-items: start;
         }
         .numbers{
-            display: flex;
-            flex-direction:row;
-            flex-wrap: wrap;
-            width:300px;
             
-        }
-        .number{
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
+            width:300px;
+            margin-right: 20px;
             
         }
 
+        
+
+        .number {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin: 4px;
+            
+        }
+        #zero{
+            margin-left: 90px;
+        }
+
         .operator{
-            display: flex;
-            flex-direction:row;
-            flex-wrap: nowrap;
+            
             width:200px;
 
         }
-        .operator{
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
+        #clear{
+            width: 170px;
+            height: 80px;
+            border-radius: 20%;
+            text-align: center;
+        }
+        .numbers{
+            margin-left: 20px;
         }
 
+        .operations{
+            width:200px;
+            
+            
+        }
+        .operator{
+            width: 80px;
+            height: 80px;
+            margin: 4px;
+            border-radius: 20px;
+        }
     </style>
 </head>
 <body>
@@ -79,7 +98,7 @@
                 <button class="number">7</button>
                 <button class="number">8</button>
                 <button class="number">9</button>
-                <button class="number">0</button>
+                <button class="number" id="zero">0</button>
 
             </div>
             <div class="operations">
